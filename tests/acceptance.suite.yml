@@ -14,7 +14,7 @@ modules:
         WebDriver:
             # Staging server for acceptance testing?
             # Won't allow database analysis
-            url: 'http://lanyardfm.fuzzdev.com/'
+            url: 'http://kindcosmetic.fuzzdev.com/'
             host: 'hub.browserstack.com'
             port: 80
             browser: chrome
