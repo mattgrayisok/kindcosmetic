@@ -8,10 +8,19 @@
 namespace App\KindCosmetic\Models;
 
 
+use Cviebrock\EloquentSluggable\SluggableInterface;
+use Cviebrock\EloquentSluggable\SluggableTrait;
 use Illuminate\Database\Eloquent\Model;
 
-class Info extends Model
+class Info extends Model implements SluggableInterface
 {
+
+    use SluggableTrait;
+
+    protected $sluggable = [
+        'build_from' => 'title',
+        'save_to'    => 'slug',
+    ];
 
     protected $guarded = [];
 
